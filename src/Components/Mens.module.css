@@ -1,0 +1,171 @@
+.main{
+    margin-top: 100px;
+    /* border: 1px solid black; */
+}
+.top{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 88%;
+    margin: auto;
+    padding-bottom: 40px;
+}
+.top>div{
+    width: 50% ;
+}
+.top>div>img{
+    width: 98%;
+}
+.topText{
+    /* border: 1px solid black; */
+    margin: auto;
+    font-weight: bolder;
+    font-size: 28px;
+    text-align: center;
+    width: 75%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.midText{
+    /* border: 1px solid black; */
+    margin: auto;
+    font-size: 10px;
+    width: 80%;
+    padding-top: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.side{
+    height: 380px;
+    background-image: url("https://cdn-static.farfetch-contents.com/cms-cm10/caas/v1/media/3673692/data/f5a003edefec9fe1e65d09f139cd1edd/3x4_messaging-side/936/data.jpeg");
+    background-size: 100%;
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    
+}
+
+.side>p{
+   
+    padding-top: 160px;
+}
+.key{
+    font-size: 9px;
+    text-align: left;
+}
+.data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /* border: 1px solid black; */
+    width: 90%;
+    margin: auto;
+    
+}
+.data>div>div>img{
+    margin: auto;
+    width: 60%;
+}
+.data>div>div{
+    padding-top: 10px;
+    padding-bottom: 5px;
+     background-color: #f6f6f6;
+}
+.data>div{
+  
+    margin: auto;
+}
+.data>div>div{
+    padding-left: 5px;
+    font-size: 9px;
+    text-align: left;
+}
+.type{
+    font-weight: lighter;
+}
+.brand{
+    font-weight: bold;
+}
+.topStyles{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /* border: 1px solid black; */
+    width: 90%;
+    margin: auto;
+    padding-bottom: 40px;
+}
+.topStyles>div{
+    font-size: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: start;
+}
+.bottomSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 40px;
+
+}
+.bottomSection>div{
+    border: 0.5px solid lightgrey;
+    font-size: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    padding-right: 45px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+   
+
+}
+.bottomSection>div>div>img{
+    width: 20px;
+}
+.bottom{
+    width: 50%;
+    margin: auto;
+    font-size: 9px;
+    text-align: left;
+    padding-bottom: 40px;
+}
+.enq{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.enq>div>div>img{
+    width: 65px;
+}
+.btn1{
+    background-color: #222222;
+    color: white;
+    font-weight: bold;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 3px;
+}
+.inp{
+    border: 1px solid lightgray;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+.btmEnq{
+
+    border-right: 1px solid lightgray;
+    padding-bottom: 25px;
+    padding-right: 35px;
+}
