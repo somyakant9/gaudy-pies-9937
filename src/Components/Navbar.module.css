@@ -54,6 +54,14 @@
 .topout>img:hover{
     background-color: lightgray;
 }
+.cart:hover{
+    background-color: lightgray;
+   
+}
+.cart{
+    width: 20px;
+    padding: 4px;
+}
 .topcenter{
     font-weight: bolder;
     font-size: 22px;

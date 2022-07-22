@@ -1,5 +1,8 @@
 import React, { useEffect } from "react";
+import { useContext } from "react";
+import { CartContext } from "../Context/CartContext";
 import styles from './MensDetail.module.css';
+
 
 const data = [
     {
@@ -299,6 +302,9 @@ const MensDetail = () => {
     const [filterPrice,setFilterPrice] = React.useState('');
     const [filterColor,setFilterColor] = React.useState('');
     const [filterRating,setFilterRating] = React.useState('');
+     
+    const {cartDetail ,setCartDetail} = useContext(CartContext);
+
 
     const handleSort=(e)=>{
         e.preventDefault();
@@ -323,7 +329,7 @@ const MensDetail = () => {
         setFilterBrand(e.target.value);
 
     }
-
+   
     const filterByBrand=()=>{
 
         let newArr = data.filter((el)=> !filterBrand || el.brand === filterBrand);
@@ -360,15 +366,22 @@ const MensDetail = () => {
         let newRating = data.filter((el)=> el.rating >= Number(filterRating));
         setMens(newRating);
     }
+    const handleCart=(el)=>{
+      
+        setCartDetail([...cartDetail , el]);
+
+    }
 
     useEffect(()=>{
 
     console.log(filterBrand,filterColor,filterPrice,filterRating);
 
     },[filterBrand,filterColor,filterPrice,filterRating])
+    
 
     return (
         <>
+        {console.log(cartDetail)};
         <div style={{ marginTop: "100px", display: "flex", alignItems: "flex-start", justifyContent: "center", gap: "15px", marginBottom: '20px' }}>
             <div style={{ width: "20%", textAlign: "start" }}>
                 <p style={{textDecoration:"underline",fontFamily:"revert-layer"}}>Filters</p>
@@ -422,8 +435,8 @@ const MensDetail = () => {
                     </select>
                 </div>
                 <div className={styles.detail} >
-                    {mens.map((el) => (
-                        <div key={el.id} className={styles.product}>
+                    {mens.map((el) => (             
+                     <div key={el.id} className={styles.product}>
                             <div><img src={el.url} alt="pi" /></div>
                             <div className={styles.brand}>{el.brand}</div>
                             <div>{el.name}</div>
@@ -433,7 +446,8 @@ const MensDetail = () => {
                                 <div className={styles.after}>${el.price}</div>
                                 <div style={{display:"flex",gap:"3px",alignItems:"baseline"}}>{el.rating}<img className={styles.star} src="https://cdn-icons-png.flaticon.com/512/1040/1040230.png" alt="star"/></div>
                             </div>
-                        </div>
+                            <div><button className={styles.cartbtn} onClick={()=>handleCart(el)}>Add to Cart</button></div>
+                        </div>  
                     ))}
                 </div>
             </div>

@@ -26,7 +26,7 @@ export const appReducer = (state ,{type,payload}) => {
 
 function AuthenticationProvider({children}) {
 
-  const [sign , dispatch] = useReducer( appReducer, {isAuth:false});
+  const [sign , dispatch] = useReducer( appReducer, {isAuth:true});
   
   const handleLogin =(token)=>{
 
