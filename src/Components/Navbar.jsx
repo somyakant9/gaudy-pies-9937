@@ -16,7 +16,7 @@ import {
 } from '@chakra-ui/react'
 import { useContext } from "react";
 import { Authentication } from "../Context/AuthContext";
-import { useNavigate } from "react-router-dom";
+import { useNavigate,Link } from "react-router-dom";
 
 const Navbar = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
@@ -61,7 +61,7 @@ const Navbar = () => {
             <div className={styles.top}>
                 <div className={styles.topin}>
                     <div>Women</div>
-                    <div>Men  </div>
+                    <div><Link to='/'>Men</Link> </div>
                     <div>Kids </div>
                 </div>
                 <div >
@@ -105,7 +105,7 @@ const Navbar = () => {
                         </ModalContent>
                     </Modal>
                     <img src="https://cdn-icons-png.flaticon.com/512/1077/1077035.png" alt="wishlist" />
-                    <img src="https://cdn-icons.flaticon.com/png/512/2651/premium/2651753.png?token=exp=1658310841~hmac=82a1bd84a9f6e4524b7fb81bb44a8d79" alt="bag" />
+                   <Link to='./cart' ><img className={styles.cart}  src="https://cdn-icons.flaticon.com/png/512/2651/premium/2651753.png?token=exp=1658310841~hmac=82a1bd84a9f6e4524b7fb81bb44a8d79" alt="bag" /></Link>
                 </div>
             </div>
             <div className={styles.bottom}>
