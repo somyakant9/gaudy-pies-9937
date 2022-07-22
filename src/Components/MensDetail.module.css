@@ -1,0 +1,91 @@
+.detail{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    gap: 15px;
+    /* border: 1px solid black; */
+
+}
+.detail>div{
+    padding: 10px;
+    /* border: 1px solid black; */
+}
+.detail>div>div{
+    font-size: 9px;
+    text-align: left;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.detail>div>div:hover{
+    text-decoration: underline;
+}
+.price{
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    text-align:start;
+    
+}
+.brand{
+    font-weight: bold;
+}
+.original{
+    font-size: 8px;
+    text-decoration: line-through;
+}
+.dis{
+    font-size: 8px;
+    
+}
+.after{
+    font-size: 10px;
+    color: red;
+}
+.star{
+    width: 7px;
+    height: 7px;
+}
+.bottom{
+    width: 50%;
+    margin: auto;
+    font-size: 9px;
+    text-align: left;
+    padding-bottom: 40px;
+    padding-top: 40px;
+   
+}
+.enq{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.enq>div>div>img{
+    width: 65px;
+}
+.btmEnq{
+
+    border-right: 1px solid lightgray;
+    padding-bottom: 25px;
+    padding-right: 35px;
+}
+.btn1{
+    background-color: #222222;
+    color: white;
+    font-weight: bold;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 3px;
+}
+.inp{
+    border: 1px solid lightgray;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 3px;
+    margin-right: 5px;
+}

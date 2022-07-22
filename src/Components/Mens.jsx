@@ -1,6 +1,7 @@
 import React from "react";
 import styles from './Mens.module.css';
-import { Button } from "@chakra-ui/react";
+import { Link } from 'react-router-dom';
+
 
 const data = [{
     id: 1,
@@ -48,9 +49,7 @@ const Mens = () => {
                         <p>The world greatest selection of designers,boutiques and brands-now on sale</p>
                     </div>
                     <div >
-                        <Button sx={{ fontSize: "9px", border: "0.5px solid black" }} colorScheme='black' size='xs' mt="20px" variant='outline'>
-                            Shop Now
-                        </Button>
+                        <Link to='/mens_detail'><button className={styles.button1} >Shop Now</button></Link>
                     </div>
                 </div>
             </div>
@@ -75,16 +74,16 @@ const Mens = () => {
                         <p> From fresh iterations of the Off-White Out Of Office to the latest Balenciaga Runner, find the next cult style to add to your collection here</p>
                     </div>
                     <div >
-                        <Button sx={{ fontSize: "9px", border: "0.5px solid black" }} colorScheme='black' size='xs' mt="20px" variant='outline'>
+                        <button className={styles.button1} >
                             Shop Now
-                        </Button>
+                        </button>
                     </div>
                 </div>
                 <div>
                     <img src="https://cdn-static.farfetch-contents.com/cms-cm10/caas/v1/media/3670006/data/197c7b29cf8766cdc998f54afe58b791/1x1_messaging-side/637/data.jpeg" alt="img" />
                 </div>
             </div>
-            <div style={{marginBottom:"40px"}}>
+            <div style={{ marginBottom: "40px" }}>
                 <div className={styles.data}>
                     {data.map((el) => (
                         <div key={el.id}>
@@ -96,71 +95,71 @@ const Mens = () => {
                         </div>
                     ))}
                 </div>
-                <div> <Button sx={{ fontSize: "9px", border: "0.5px solid black" }} colorScheme='black' size='xs' mt="20px" variant='outline'>
+                <div>  <button className={styles.button1} >
                     Shop Now
-                </Button>
+                </button>
                 </div>
             </div>
-             <div className={styles.topStyles}>
+            <div className={styles.topStyles}>
                 <div>
                     <img src="https://cdn-static.farfetch-contents.com/cms-cm10/caas/v1/media/3669980/data/493c11100a2aba62fd9278d6d2caf2aa/3x4_three-columns/480/data.jpeg" alt="men's clothing" />
                     <p>VERSACE</p>
-                    <p>Bold, bright and right here</p>                
+                    <p>Bold, bright and right here</p>
                 </div>
                 <div>
                     <img src="https://cdn-static.farfetch-contents.com/cms-cm10/caas/v1/media/3669964/data/229b1c2a4b4ea211efa1592f2ff82f3d/3x4_three-columns/480/data.jpeg" alt="men's clothing" />
                     <p>WEAR-EVERYWHERE BAGS</p>
-                    <p>The Prada Triangle leads the way</p>                
+                    <p>The Prada Triangle leads the way</p>
                 </div>
                 <div>
                     <img src="https://cdn-static.farfetch-contents.com/cms-cm10/caas/v1/media/3670008/data/47355043f142e0642a2c4a6e85583d2a/3x4_three-columns/480/data.jpeg" alt="men's clothing" />
                     <p>MASON MARGIELA</p>
-                    <p>Cult styles and the New min Lock bag</p>                
+                    <p>Cult styles and the New min Lock bag</p>
                 </div>
-             </div>
-             <div className={styles.topStyles}>
+            </div>
+            <div className={styles.topStyles}>
                 <div>
                     <img src="https://cdn-static.farfetch-contents.com/cms-cm10/caas/v1/media/3669976/data/dc0dd7456839a40781777cf7a16a8183/3x4_three-columns/480/data.jpeg" alt="men's clothing" />
                     <p>THE STREETWEAR EDIT</p>
-                    <p>Hype-Sneakers and top-tier brands</p>                
+                    <p>Hype-Sneakers and top-tier brands</p>
                 </div>
                 <div>
                     <img src="https://cdn-static.farfetch-contents.com/cms-cm10/caas/v1/media/3670046/data/2347292e5772c4b0a16a0adbd100d745/3x4_three-columns/480/data.jpeg" alt="men's clothing" />
                     <p>THE MINIMALIST EDITS</p>
-                    <p>Clean Lines and Paired-styles </p>                
+                    <p>Clean Lines and Paired-styles </p>
                 </div>
                 <div>
                     <img src="https://cdn-static.farfetch-contents.com/cms-cm10/caas/v1/media/3669990/data/ca738cd21a6d579a223cbad4b6209a18/3x4_three-columns/480/data.jpeg" alt="men's clothing" />
                     <p>THE CULT EDIT</p>
-                    <p>Cutting-edge pieces and experimental designs</p>                
+                    <p>Cutting-edge pieces and experimental designs</p>
                 </div>
-             </div>
-             <div className={styles.bottomSection}>
+            </div>
+            <div className={styles.bottomSection}>
                 <div>
-                    <div><img src="https://cdn-icons.flaticon.com/png/512/4399/premium/4399105.png?token=exp=1658338355~hmac=9d1c09b612cf8c639eb28a97ea4821ff" alt="ph1"/></div>
+                    <div><img src="https://cdn-icons.flaticon.com/png/512/4399/premium/4399105.png?token=exp=1658338355~hmac=9d1c09b612cf8c639eb28a97ea4821ff" alt="ph1" /></div>
                     <div>HOW TO SHOP</div>
                     <div>Your guide to shopping and placing orders</div>
                 </div>
                 <div>
-                    <div><img src="https://cdn-icons-png.flaticon.com/512/471/471664.png" alt="ph2"/></div>
+                    <div><img src="https://cdn-icons-png.flaticon.com/512/471/471664.png" alt="ph2" /></div>
                     <div>FAQS</div>
                     <div>Your questions answered</div>
                 </div>
                 <div>
-                    <div><img src="https://cdn-icons.flaticon.com/png/512/3193/premium/3193015.png?token=exp=1658338454~hmac=74cfe45d582b3734ce79680e108de476" alt="ph3"/></div>
+                    <div><img src="https://cdn-icons.flaticon.com/png/512/3193/premium/3193015.png?token=exp=1658338454~hmac=74cfe45d582b3734ce79680e108de476" alt="ph3" /></div>
                     <div>NEED HELP?</div>
                     <div>Contact our global Customer Service Team</div>
                 </div>
-             </div>
-             <div className={styles.bottom}>
-                <div style={{fontWeight:"bolder", fontSize:"18px"}}>DOWNLOAD THE FARFETCH APP</div>
-                <div style={{paddingBottom:"20px"}}>Enjoy exclusive content on our app, including personalized product edits as well as our Visual Search tool for iOS. More about the app</div>
+            </div>
+            <div className={styles.bottom}>
+                <div style={{ fontWeight: "bolder", fontSize: "18px" }}>DOWNLOAD THE FARFETCH APP</div>
+                <div style={{ paddingBottom: "20px" }}>Enjoy exclusive content on our app, including personalized product edits as well as our Visual Search tool for iOS. More about the app</div>
                 <div className={styles.enq}>
                     <div className={styles.btmEnq}>
                         <div>EMAIL ME</div>
                         <div>Enter your email and we'll send you a link to download the free app</div>
                         <div >
-                            <input className={styles.inp} type="email" placeholder="Email address"  />
+                            <input className={styles.inp} type="email" placeholder="Email address" />
                             <button className={styles.btn1}>Send</button>
                         </div>
                     </div>
@@ -169,10 +168,9 @@ const Mens = () => {
                         <div><img src="https://media.blackandwhite-ff.com/10000/2a0d5342-2544-4898-b2d4-8272235868d6_qr.png" alt="QR code" /></div>
                     </div>
                 </div>
-             </div>
+            </div>
         </div>
     )
 }
 
-// https://cdn-static.farfetch-contents.com/cms-cm10/caas/v1/media/3673692/data/f5a003edefec9fe1e65d09f139cd1edd/3x4_messaging-side/936/data.jpeg
 export default Mens;

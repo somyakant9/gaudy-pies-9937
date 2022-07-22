@@ -169,3 +169,13 @@
     padding-bottom: 25px;
     padding-right: 35px;
 }
+.button1{
+    margin-top: 20px;
+    font-size: 9px;
+    border: 1px solid black;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 3px;
+}
