@@ -34,23 +34,29 @@ const Navbar = () => {
         })
     }
     const navigate = useNavigate();
-
+    
     const handleSubmit = (e) => {
         e.preventDefault();
-
-        fetch("https://reqres.in/api/login", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(details)
-        })
-            .then(res => res.json())
-            .then(d => {
-                console.log(d.token);
-                auth.handleLogin(d.token);
-                navigate('/')
-            });
+       
+        if(details.email === 'eve.holt@reqres.in' && details.password === 'cityslicka'){
+            fetch("https://reqres.in/api/login", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(details)
+            })
+                .then(res => res.json())
+                .then(d => {
+                    console.log(d.token);
+                    auth.handleLogin(d.token);
+                });
+        }
+        else{
+            alert("Email or Password doesn't match.");
+            navigate('/');
+        }
+       
 
     }
 
@@ -70,7 +76,7 @@ const Navbar = () => {
                 <div className={styles.topout}>
                     <img src="https://cdn-icons-png.flaticon.com/512/197/197419.png" alt="country" />
 
-                    <img onClick={onOpen} src="https://cdn-icons-png.flaticon.com/512/126/126486.png" alt="user" />
+                    {!auth.sign.isAuth?<img onClick={onOpen} src="https://cdn-icons-png.flaticon.com/512/126/126486.png" alt="user" />:<img onClick={onOpen} src="https://cdn-icons-png.flaticon.com/512/1791/1791961.png" alt="user" />}
 
                     <Modal
                         initialFocusRef={initialRef}
@@ -105,6 +111,7 @@ const Navbar = () => {
                         </ModalContent>
                     </Modal>
                     <img src="https://cdn-icons-png.flaticon.com/512/1077/1077035.png" alt="wishlist" />
+                    <img onClick={()=>auth.handleLogout()} src="https://cdn-icons-png.flaticon.com/512/5509/5509486.png" alt="logout" />
                    <Link to='./cart' ><img className={styles.cart}  src="https://cdn-icons.flaticon.com/png/512/2651/premium/2651753.png?token=exp=1658310841~hmac=82a1bd84a9f6e4524b7fb81bb44a8d79" alt="bag" /></Link>
                 </div>
             </div>

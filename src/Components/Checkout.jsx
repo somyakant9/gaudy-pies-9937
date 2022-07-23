@@ -10,9 +10,27 @@ const Checkout = () => {
     return (
         <div className={styles.main}>
             <div className={styles.delivery}>
-                  <form>
-                    
-                  </form>
+                  <div className={styles.heading}>Add your delivery address</div>
+                  <div className={styles.name}>
+                    <input type="text" placeholder="First Name"/>
+                    <input type="text" placeholder="Last Name"/>
+                  </div>
+                  <div className={styles.country}>
+                    <input type="text" placeholder="Country/Region" />
+                  </div>
+                  <div className={styles.country}>
+                  <input type="text" placeholder="Address" />
+                  </div>
+                  <div className={styles.name}>
+                    <input type="text" placeholder="City"/>
+                    <input type="text" placeholder="State"/>
+                  </div>
+                  <div className={styles.country}>
+                  <input type="number" placeholder="Postal or zip code *" />
+                  </div>
+                  <div className={styles.country}>
+                  <input type="number" placeholder="Phone Number" />
+                  </div>
             </div>
 
             <div className={styles.summary}>
@@ -32,7 +50,7 @@ const Checkout = () => {
                     <p>USD ${total + 24}.00</p>
                 </div>
                 <div className={styles.four}>
-                    <Link to='./checkout'><button>Checkout Page</button></Link>
+                    <Link to='/cart/checkout/payment'><button>Save and Continue</button></Link>
                 </div>
             </div>
         </div>
