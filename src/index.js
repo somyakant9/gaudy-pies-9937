@@ -1,4 +1,4 @@
-import React, { StrictMode } from 'react';
+// import React, { StrictMode } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
@@ -11,7 +11,7 @@ import { CartContextProvider } from './Context/CartContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-   <StrictMode>
+  
     <BrowserRouter>
         <ChakraProvider>
             <CartContextProvider>
@@ -21,7 +21,7 @@ root.render(
             </CartContextProvider>
         </ChakraProvider>
     </BrowserRouter>
-    </StrictMode>
+   
 
 
 );
