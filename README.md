@@ -1,70 +1,27 @@
-# Getting Started with Create React App
+1.This is an Individual Project done by me in 4 days. 
+My project was to clone the website of [FaFetch.com](https://www.farfetch.com/in/shopping/men/items.aspx).Farfetch is a British-Portuguese online luxury fashion retail platform that sells products from over 700 boutiques and brands from around the world.
+I created a basic flow of the website.
+The pages I have show are:-
+ 1.Men's Page
+ 2.Men's Product Page
+ 3.Cart page
+ 4.Checkout,payment and confirmation page.
+ 5.Login Page.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+I have used [Reqres Api](https://reqres.in/) for the functionality of login page.
+The Landing page is the Men's Page, where you can see the best products and different product shown.
+In the Navbar section you can click on the Login button which will open a modal for which I have used [chakra-ui](https://chakra-ui.com/) for the designing of the modal.
+Where you can use UserName as - "eve.holt@reqres.in" and password as -"cityslicka" to login in the page.
+If you enter any wrong information in Login page in it will not show you loggged in.
 
-## Available Scripts
+Then clicking on the 1st div on men's page you will redirected to the Men's Product Page where you can different products shown.
+I have shown filtering functionality on the right side where you can filter based on color, brands, etc. At a time you can filter the products based on one selected filtering option.
+You can Sort the product based on the Price low to high and Price high to low.
+Then on ever product one button is there which you can use to add the product to the cart.
 
-In the project directory, you can run:
+The cart page can be accessed by the individual if only he is only logged in, for that I have used Private Route which allows to make the cart page accessed by only logged in individual.
 
-### `npm start`
+In the Cart page you can find the products you added. I have provided a functionality to remove the products from the cartpage.
+In the further page you just have to add the details like in Checkout page you have to add your delivery address and click on the payment and It will redirect to you the payment page and there you can add your Card details and confirm it will show you the confirmation Page. After 5 seconds it will redirect you the homepage i.e Men's Page.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
